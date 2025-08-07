@@ -39,6 +39,14 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem "devise"
+  gem "image_processing"
+  gem "shrine", "~> 3.5"
+  gem "rubyzip"
+  gem "minitar"
+  gem "friendly_id"
+  gem "rspec-rails"
+  gem "factory_bot_rails"
 end
 
 group :development do
@@ -47,6 +55,7 @@ group :development do
 
   # Highlight the fine-grained location where an error occurred [https://github.com/ruby/error_highlight]
   gem "error_highlight", ">= 0.4.0", platforms: [ :ruby ]
+  gem "sidekiq"
 end
 
 group :test do
